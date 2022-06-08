@@ -126,7 +126,7 @@ UNSQUASHFS_OBJS = unsquashfs.o unsquash-1.o unsquash-2.o unsquash-3.o \
 CFLAGS ?= -g -O2
 CFLAGS += $(EXTRA_CFLAGS) $(INCLUDEDIR) -D_FILE_OFFSET_BITS=64 \
 	-D_LARGEFILE_SOURCE -D_GNU_SOURCE -DCOMP_DEFAULT=\"$(COMP_DEFAULT)\" \
-	-Wall #-DSQUASHFS_TRACE
+	-Wall -Werror #-DSQUASHFS_TRACE
 
 LIBS = -lpthread -lm
 ifeq ($(GZIP_SUPPORT),1)

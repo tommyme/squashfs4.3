@@ -9,4 +9,3 @@ cd squashfs-tools
 make && sudo make install
 ```
 
-删掉了Makefile line 129 `-Werror` 我arm make会有警告
